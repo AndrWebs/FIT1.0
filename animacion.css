@@ -1,0 +1,173 @@
+
+.banner{
+ -webkit-animation-name:pulse;
+ -webkit-animation-duration:30s;
+ -webkit-animation-iteration-count:infinite;
+ -webkit-animation-timing-function: ease-ion-out;
+ -webkit-animation-direction: alternate;
+ color:FFF;
+ background-color: white;
+ width:auto;
+ padding: 0.2rem 1rem;
+ margin:0.2em;
+ border-radius:40%;
+}
+
+.tabla{
+ width:100%;
+ background-color: rgb(187, 240, 174);
+}
+
+table{
+ font-family:"Lucida Sans Unicode", "Lucida Grande", Sans Serif;
+ font-size:50%;
+ margin:0;
+ width:100%;
+ height:auto;
+ border-radius:10px;
+ box-shadow: 10px 10px 10px #100;
+ text-align:center;
+ border-collapse:collapse;
+}
+th{
+ height:auto;
+ padding:0;
+ background:#b9ceff;
+ border-top:10px solid #aaccfe;
+ border-bottom:5px solid yellow;
+ color: black;
+}
+td{
+ padding:auto;
+ border-bottom:1px solid #fff;
+ color:black;
+ border-top:1px solid transparent;
+ border-left:2px solid rgb(6, 243, 6);
+}
+/*producimos un acercamiento a los cubos de la tabla*/
+td:hover,td:focus{
+ background-color:white;
+ -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+ -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+ box-shadow:10px 10px 7px rgba(0,0,0,.7);
+ -webkit-transform: scale(1.25);
+ -moz-transform: scale(1.25);
+ -o-transform: scale(1.25);
+ position:relative;
+ z-index:5;
+}
+/*las notas didacticas*/
+.notas{
+ margin:0 ;
+ width:100%;
+ height:100%;
+}
+ol,li{
+ list-style:none;
+ text-align: center;
+ margin:1%;
+}
+
+ol{
+ overflow:hidden; 
+ padding: 1rem;
+}
+
+ol li{
+ margin:1%;
+ float:left;
+}
+ol li h3{
+ font-size:100%;
+ font-weight:bold;
+ padding:1px;
+}
+ol li p{
+ font-family:"Reenie Beanie", Segoe Print, sans-serif;
+ font-size:75%;
+ width:100%;
+ color: rgb(1, 1, 19); 
+ height: auto;
+ padding:0;
+
+}
+/*le colocamos sombra a las notas*/
+ol li a{
+ text-decoration:none;
+ background:rgb(238, 189, 189);
+ display:block;
+ height:50%;
+ width:100%;
+ border-radius: 20px;
+ padding:10px;
+ -webkit-box-shadow:15px 15px 15px 7px black;
+}
+
+/*rotamos los box ligeramente*/
+ol li a{
+-webkit-transform:rotate(-6deg);
+-o-transform:rotate(-6deg);
+-moz-transform:rotate(-6deg);
+}
+
+ol li:nth-child(even) a{
+-o-transform:rotate(4deg);
+-webkit-transform:rotate(4deg);
+-moz-transform:rotate(4deg);
+position:relative;
+top:5px;
+}
+
+ol li:nth-child(3n) a{
+-o-transform:rotate(-3deg);
+-webkit-transform:rotate(-3deg);
+-moz-transform:rotate(-3deg);
+position:relative;
+top:-5px;
+}
+
+ol li:nth-child(5n) a{
+-o-transform:rotate(5deg);
+-webkit-transform:rotate(5deg);
+-moz-transform:rotate(5deg);
+position:relative;
+top:-10px;
+}
+/*produce un acercamiento al pasar sobre los box*/
+ol li a:hover,ol li a:focus{
+-moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+-webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+box-shadow:10px 10px 7px rgba(0,0,0,.7);
+-webkit-transform: scale(1.25);
+-moz-transform: scale(1.25);
+-o-transform: scale(1.25);
+position:relative;
+z-index:5;
+}
+@-webkit-keyframes pulse{
+     0%{background-color: black;
+        opacity:1.0;
+        -webkit-transform: scale(1.0) rotate(0deg);
+        }
+   40%{background-color:rgb(180, 223, 248);
+        opacity:0.1;
+        -webkit-transform: scale(1.2) rotate(-5deg) translateX(-150px) translateY(-150px);
+        }
+   55%{background-color: rgb(22, 133, 87);
+        opacity:0.2;
+        -webkit-transform: scale(1.0) rotate(50deg) translateX(-150px) translateY(150px);
+        }
+   65%{background-color: black;
+        opacity:0.1;
+        -webkit-transform: scale(2.0) rotate(10deg) translateX(-150px) translateY(150px)
+        }
+   75%{background-color:rgb(156, 191, 231);
+        opacity:0.1;
+        -webkit-transform: scale(2.0) rotate(60deg) translateX(-150px) translateY(-150px);
+        }
+   100%{background-color: green;
+        opacity:0.9;
+        -webkit-transform: scale(1.0) rotate(0deg);
+        }
+
+     }
