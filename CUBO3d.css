@@ -1,0 +1,104 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  }
+.cubo{
+    width:100%;
+    margin:auto;
+    text-align: center;
+    margin-top:20px;
+    margin-bottom: 180px;
+    transform-style:preserve-3d;
+    transform:perspective(700px) rotateX(-30deg) rotateY(-30deg);
+    }
+.cubo img{
+    width:100%;
+     height: 100%;   
+    }
+ 
+.cara{
+    position:absolute;/*para poner- orden de posicionarlo*/
+    width:100%;
+    height:204px;
+    margin:auto;
+    border-radius:2%;
+    /*float:left;*/
+}
+.cubo{
+     width: 100%;
+     height: 100%;
+     border-style:outset;
+    animation-name:rotar1;/*nombre del keyframes*/
+    animation-duration:10s;
+    animation-iteration-count:infinite;/*lo repetimos infinito*/
+    animation-direction:normal;/*lo movemos adelante y atras*/
+    /*animation-fill-mode: both;
+    animation-delay: 2s;*/
+    animation-timing-function: linear;
+    border: 15px solid rgb(225, 148, 235); 
+    border-radius: 10%;
+    }
+    
+.cubo:hover{
+    animation-play-state: paused;/*pasamos el raton por ensima y se pausa*/
+    }
+/*rotamos los lados en su dimension 3d*/
+#derecha{transform: rotateY(90deg);}
+#derecha{transform: rotateY(90deg) translateZ(100px);}
+
+#superior{
+     width:100%;
+     height: 50px;
+     background-color:black;
+     transform:rotateX(90deg) translateZ(25px);
+     }
+#inferior{
+     height: 50px;
+     background-color:black;
+     transform:rotateX(-90deg) translateZ(180px);
+}
+
+#frente{
+     border-width: 30px;
+     border-style:outset;
+     transform: translateZ(25px);
+     }
+#atras{
+     border-width: 20px;
+     border-style: outset; 
+     transform: translateZ(-25px);
+     background-color:cyan;
+     }
+#derecha{
+     width: 50px;
+     background-color:black;
+     transform:rotateY(90deg) translateZ(145px);
+}
+#izquierda{
+     width: 50px;
+     background-color:rgb(53, 53, 5);
+     transform:rotateY(-90deg) translateZ(25px);
+}
+
+@keyframes rotar{
+       0% {transform: rotateX(-10deg) rotateY(0deg);}
+      100%{transform: rotateX(5deg) rotateY(360deg);}
+      }
+@keyframes rotar1{
+    0%{transform: rotateX(-10deg) rotateY(0deg);}
+    10%{transform: rotateX(-10deg) rotateY(-10deg);}
+    20%{transform: rotateX(10deg) rotateY(10deg);}
+    30%{transform: rotateX(-10deg) rotateY(20deg);}
+    40%{transform: rotateX(10deg) rotateY(30deg);}
+    60%{transform: rotateX(-10deg) rotateY(40deg);}
+    80%{transform: rotateX(-10deg) rotateY(50deg);}
+    90%{transform: rotateX(10deg) rotateY(60deg);}
+    100%{transform: rotateX(5deg) rotateY(360deg);}
+    }
+
+
+
+
+
+

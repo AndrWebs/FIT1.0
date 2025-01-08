@@ -1,0 +1,221 @@
+*{
+margin:0;
+padding:0;
+}
+h1{
+    width:auto;
+    margin:1%;
+    height:auto;
+    text-align:center;
+    text-shadow: rgb(209, 196, 12) 2px 1px 1px;
+    color:black;
+    border-left:10px solid green;
+    border-radius: 30%;
+    background:-webkit-gradient(linear, 0 0, 0 100%, from(white), to(rgb(56, 122, 56)));
+    box-shadow:0 0 10px 5px rgb(66, 6, 66), -20px 0px 50px pink;
+}
+.tabla h2{
+    text-align:center;
+    -webkit-transform:rotate(-3deg);
+    -moz-transform:rotate(-3deg);
+    -o-transform:rotate(-3deg);
+    transform:rotate(-3deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+.tabla b{
+    color:rgb(255, 81, 0);
+    font-size: 1.5rem;
+}
+        
+.contenedor{
+    border-style:ridge ;
+    border-width:25px;
+    width:90%;
+    max-width:1000px;
+    margin:0 auto;
+    overflow:hidden;
+}
+header{
+    text-align: center;
+    background-color: darkgrey;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+section{
+    background-color: rgb(200, 238, 200);
+}
+.principal img{
+    width:50%;
+    height:auto;
+    margin:auto;
+    border-radius:10%;
+    overflow: hidden;
+    float: left;
+}
+.keto{
+    color: rgb(29, 71, 107);
+    margin:3%;
+    padding:11px;
+    width: auto;
+    height:auto;
+    display: block;
+    border-radius:10px;
+    box-shadow: 12px 12px 15px #000;
+    text-align:left;
+    overflow: hidden;
+    background-color: white;
+}
+.keto p{
+   color: rgb(2, 13, 36)
+}
+.keto img{
+    width:20%;
+}
+ol{
+    margin: auto;
+    width:90%;
+}
+
+aside{
+    background-color: rgb(231, 206, 210);
+}
+aside img{
+    margin: auto;
+    width: 50%;
+}
+
+p:first-letter{
+    overflow: hidden;
+    display:block;
+    margin:-30px 0px 0px;
+    float:left;
+    color:rgb(105, 52, 2);
+    text-shadow: 5px 1px 1px #000;
+    font-size:60px;
+    
+}
+b{color:rgb(180, 112, 3);
+}
+p{
+color:black;
+}
+
+.fit{
+margin:5%;
+padding:3px;
+width: auto;
+height:auto;
+display: block;
+border-radius:30px;
+box-shadow: 12px 12px 15px #000;
+text-align:left;
+overflow: hidden;
+background:white;
+}
+.fit img{
+    
+    margin: auto;
+    width: 40%;
+    overflow: hidden;
+    float: left;
+}
+footer{
+    text-align: center;
+    margin:auto;
+    padding-bottom: 25px;
+}
+
+#activar~.tabla{
+display:none;
+overflow:hidden;
+}
+#activar:checked~.tabla{display:block;}	
+
+table{
+font-family:"Noto sans";
+font-size:60%;
+margin:0;
+width:100%;
+height:auto;
+border-radius:10px;
+box-shadow: 10px 10px 10px #100;
+align:center;
+overflow: hidden;
+background:#550;
+text-align:center;
+border-collapse.collapse;
+}
+
+th{
+height:auto;
+padding:0;
+background-color:white;
+border-top:10px solid #aaccfe;
+border-bottom:5px solid yellow;
+color: black;
+}
+
+td{
+padding:auto;
+background:#e4f0f5;
+border-bottom:1px solid #fff;
+color:black;
+border-top:1px solid transparent;
+border-left:2px solid green;
+}
+/*producimos un acercamiento a los cubos de la tabla*/
+td:hover,td:focus{
+    background-color: white;
+-moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+-webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+box-shadow:10px 10px 7px rgba(0,0,0,.7);
+-webkit-transform: scale(1.25);
+-moz-transform: scale(1.25);
+-o-transform: scale(1.25);
+position:relative;
+z-index:5;
+}
+
+/*le colocamos sombra a los links*/
+a {
+    color: red;
+    text-align: center;
+ text-decoration:none;
+ display:block;
+}
+/*rotamos los links ligeramente*/
+a {
+-webkit-transform:rotate(-3deg);
+-o-transform:rotate(-3deg);
+-moz-transform:rotate(-3deg);
+}
+
+/*produce un acercamiento al pasar sobre los box*/
+a:hover, a:focus{
+-moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+-webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+box-shadow:10px 10px 7px rgba(0,0,0,.7);
+-webkit-transform: scale(1.25);
+-moz-transform: scale(1.25);
+-o-transform: scale(1.25);
+position:relative;
+z-index:5;
+}
+
+@media screen and (max-width:900px){
+      body{font-size: 12px;
+           background:rgb(162, 185, 183);}
+          .principal{width:100%;}
+           aside{width:100%;}
+}
+@media screen and (max-width:400px){
+                  .contenedor{width:100%;}
+                    aside{display:block;}
+}
+
+
+
+
+
+
+

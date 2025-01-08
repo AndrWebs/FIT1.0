@@ -1,0 +1,364 @@
+*{
+ box-sizing:border-box; /*el margin y el padding sean iguales*/
+}
+body{
+ margin:0;/*le quitamos el margen entre los elementos del cuerpo de la web*/
+ overflow-x:hidden; /*para quitarles el escrobal horizontal el tamaño de pantalla*/
+}
+.contenedor{
+ width:90%;
+ margin:0 auto;
+ overflow:hidden;
+}
+.header{
+    font-size: 1.1rem;
+  display:flex;/*colocamos la pantalla flexible*/
+  align-items:center;/*centramos todos los items */
+  color:black;/*color de texto-encabezado*/ 
+  
+}
+.content{
+    max-width:50rem;/*maximo ancho*/
+    padding-left:1rem;/*espaciado a la izquierda*/
+    padding-right:1rem;/*espaciado a la derecha*/
+    padding-bottom: 3rem;
+    margin:auto;/*para que el contenido se centre automatico*/
+    text-align:center;/*alineacion del texto*/
+}
+.header-video{
+    position:absolute;/*la posicion principal*/
+    top:0;
+    left:0;
+    width:100%;
+    height:80vh;
+    overflow:hidden;/*le quitamos la barra de dsplazar*/
+}
+.header-video video{
+ min-width:100%;
+ min-height:100%;
+}
+.header-overlay{
+    height:85vh;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background:#bce4cb;
+    z-index:1;
+    opacity: 0.5;
+}
+.header-content{
+    z-index:2;
+}
+.header-content h1{
+  font-size:50px;
+  color: rgb(2, 35, 36);
+  z-index:2;
+  font-family:jokerman;
+  border: thick solid rgb(102, 8, 52);
+  border-style:outset;
+  box-shadow: 12px 12px 15px rgb(2, 37, 11);
+}
+.header-content p{
+    color: black;
+    font-size:1.5rem;
+    display:block;
+    
+}
+.boton{
+    color:cyan;
+    background:rgb(4, 61, 68);
+    font-size:1.2rem;
+    padding:1rem 2rem;
+    text-decoration:none;
+    border-radius: 60%;
+
+    box-shadow: -12px -12px 15px #000;/*sombras a el boton*/
+}
+/*producimos un acercamineto de los link*/
+a{
+ color:rgb(14, 4, 110);
+ text-decoration:none;
+ margin: auto;
+}
+a:hover, a:focus{
+  border: thick solid rgb(218, 175, 175);
+  color:rgb(4, 5, 1);
+  background:rgb(199, 229, 233);
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+   box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+}
+
+nav{
+    padding-top:1px;
+    position:fixed;
+    z-index: 4;
+    float:right;
+    margin-right:15px;
+    /*margin-top:13px;
+    margin-left:43px;*/
+    width:30%;
+    height:15px;
+    border-radius:50%;
+}
+nav ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+nav ul li{
+    background-color: rgb(53, 4, 30);
+    display:inline-block;
+    line-height:20px;
+    border-radius: 20%;
+    border-style:inset;
+    border-width:2px;
+} 
+nav ul li a {
+    color:aqua;
+    display:block;
+    padding: 2px 5px;
+    text-decoration:none;
+    cursor:url("imagenes/perro.png"), auto;
+}
+#logo{
+    padding-top: 20px;
+    padding-left: 25px;
+    position:fixed;
+    z-index:3;
+}
+.informativo{
+    padding:0 3rem 0 3rem;
+    margin: auto;
+    top:10px ;
+    width: 90vw;
+    border-radius: 50%;
+    z-index: 3;
+    position:relative;/*la posicion principal*/
+    left:60px;
+    overflow:hidden;
+}
+.informativo p {
+    font-size: 1.2rem;
+    text-align: left;
+    width: 3500px;    
+    line-height: 1.2;/*ancho de la linea de texto*/ 
+    color: rgb(17, 84, 102);
+
+    animation-duration:130s;
+    animation-name:parrafo;
+    animation-iteration-count:infinite;/*lo repetimos infinito*/
+    animation-direction:normal;/*lo movemos adelante y atras*/
+    /*animation-fill-mode: both;
+    animation-delay: 2s;*/
+    animation-timing-function: linear;
+}
+.informativo p:hover{
+ animation-play-state: paused;/*pasamos el raton por ensima y se pausa*/
+}
+@keyframes parrafo {
+0% {margin-left:1000px;}
+100%{margin-left: -4000px;}
+}
+.main{
+  text-align: center;
+  border-style:Groove;
+  width:70%;
+  padding:2rem  1rem;
+  float:left;/*colocamos esta seccion en la izquierda con 70%*/
+}
+.main h1{
+    color:rgb(31, 7, 77);
+    box-shadow: 1px 1px 11px rgb(73, 12, 12);/*derecha-abajo-difuminado*/
+}
+.main h2{
+    color:rgb(58, 9, 3);
+    /*text-shadow: 1px 1px 5px rgb(9, 43, 1);derecha-abajo-difuminado*/
+}
+.main h4{
+    color:rgb(17, 71, 87);
+}
+.main b{
+  color: rgb(8, 8, 104);
+}
+.main img {
+ width:30%;
+ height:auto;
+ margin:auto;
+ border-radius:10%;
+ overflow: hidden;
+ float: left;
+}
+.main a{
+    color:red;
+}
+.casa {
+    background-color: rgb(236, 236, 126);
+}
+.grasa{
+    background-color: #def3ae;
+}
+.grasa b{
+  color: #f86b0c;
+}
+.grasa img{
+    width:20%;
+    height:auto;
+    margin:auto;
+    overflow: hidden;
+    float: left;
+}
+.fisico{
+  border-top-left-radius: 60%;
+  border-bottom-right-radius: 70%;
+  background-color: #f5e4ee;
+}
+.fisico img{ 
+  width:30%;
+  height:auto;
+  margin:auto;
+  border-radius:10%;
+  overflow: hidden;
+  float: left;
+}
+.fisico h1{
+  color:rgb(139, 71, 82);
+  font-style: italic;
+  width: 100%;
+  font-size:3.3rem;
+}
+.fisico h2 b{
+  color:rgb(45, 45, 85);
+  font-style: gabriola;
+  width: 100%;
+  font-size:2rem;
+}
+#videof{
+    width: 90%;
+}
+.tabla{
+   background-color:rgb(180, 235, 235);
+   font-family:"Noto sans";
+}
+table{
+    font-family:"Noto sans";
+    font-size:60%;
+    margin:0;
+    width:100%;
+    height:auto;
+    border-radius:10px;
+    box-shadow: 10px 10px 10px #100;
+    align:center;
+    overflow: hidden;
+    text-align:center;
+    
+    }
+    
+    th{
+    height:auto;
+    padding:0;
+    background-color:white;
+    border-top:10px solid #aaccfe;
+    border-bottom:5px solid yellow;
+    color: black;
+    }
+    
+    td{
+    padding:auto;
+    background:#e4f0f5;
+    border-bottom:1px solid black;
+    color:black;
+    border-top:1px solid transparent;
+    border-left:2px solid green;
+    }
+    /*producimos un acercamiento a los cubos de la tabla*/
+    td:hover,td:focus{
+        background-color: white;
+    -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    position:relative;
+    z-index:5;
+    }
+    
+    
+.ejercicio{
+    background-color: rgb(239, 241, 202);
+    border-top-right-radius: 60%;
+    border-bottom-right-radius: 70%;
+}
+
+.estrategia{
+    background-color: #e1ecee;
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 50%;
+}
+.estrategia b{
+    color: #9c5707;
+}
+.estrategia img{
+    width:30%;
+    border-radius:10%;
+    overflow: hidden;
+    float: left;
+}
+
+aside{
+    width:30%;
+    padding:20px;
+    box-sizing:border-box;
+    float:left;
+    border-style:inset;
+    border-width:30px;
+}
+aside img{
+    width: 100%;
+}
+.enlaces {
+    background-color: rgb(247, 234, 176);
+    border-top-left-radius: 60%;
+    border-bottom-right-radius: 60%;
+}
+.enlaces img{
+    width: 10%;
+}
+.notas img{
+    width: 50%;
+    
+}
+.notas b{
+    color:#025f6b;
+}
+        
+footer{
+    text-align:center;
+    clear:both;
+    float:left;
+    
+    box-sizing:border-box;
+    width:100%;
+    height:auto;
+    padding:20px;
+    color:black;
+    background:rgb(128, 111, 111);
+    border-style:outset;
+    border-width:12px;
+    }
+
+/*lo estilizamos cuando para los celulares*/
+@media screen and (max-width:800px){
+ .main{width:100%;}
+ aside{width:100%;}
+}
+@media screen and (max-width:400px){
+ .contenedor{width:100%;}
+  .cubo{width:50%;}
+}
+        
