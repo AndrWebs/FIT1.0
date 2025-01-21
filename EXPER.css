@@ -126,8 +126,8 @@ nav ul li a {
     cursor:url("imagenes/perro.png"), auto;
 }
 #logo{
-    padding-top: 20px;
-    padding-left: 25px;
+    padding-top: 30px;
+    padding-left: 35px;
     position:fixed;
     z-index:3;
 }
